@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio</a>
+        <ul>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+    <!--Home section-->
+    <section class="home" id="home">
+        <div class="home-info">
+            <h1>Kundika Narendra Sahare</h1>
+            <h2>Hey I'm a
+                <span style="--i:4;" data-text="Python Developer">Python Developer</span>
+                <span style="--i:3;" data-text="Frontend Developer">Frontend Developer</span>
+                <span style="--i:2;" data-text="Web Developer">Web Developer</span>
+                <span style="--i:1;" data-text="Freelancer">Freelancer</span>
+            </h2>
+            <p>Computer Science Engineer | Building the future with AI, Web and IoT innovation</p>
+            <div class="btn-sci">
+                <a href="Resume.pdf" class="btn" download>Download CV</a>
+                <div class="sci">
+                    <a href="https://github.com/kundika-sahare"  target="-blank">
+                        <i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/kundika-sahare-999199294"  target="-blank">
+                        <i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="image.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="about-text">
+            <div class="about-text">
+
+
+                <p>“I am a Computer Science Engineering student and passionate freelancer, combining technology,
+                    creativity, and
+                    problem-solving to deliver impactful results. My work spans across Python, web development, AI
+                    tools, and
+                    IoT
+                    solutions, alongside graphic design and creative content creation.
+                    What sets me apart is my ability to combine technical expertise with creative thinking —
+                    transforming ideas
+                    into impactful projects. From building smart systems to designing futuristic concepts, I strive to
+                    create
+                    solutions that are not only functional but also meaningful.
+                    My vision is to grow as a developer, designer, and problem solver while contributing to projects
+                    that push
+                    boundaries. Always open to collaboration, freelancing opportunities, and innovative challenges.”</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>my Work</h2>
+        <p>Here you can see my best projects.</p>
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Keylogger-Detection-Auto-Blocker</h3>
+                <p>A Python project that detects keylogger activities in real-time, preventing unauthorized keylogging
+                    and
+                    ensuring user security.</p>
+                <p class="tech">⚙ Tech: Python</p>
+                <div class="links">
+                    <a href="https://github.com/kundika-sahare/Keylogger-Detection-Auto-Blocker" target="_blank"
+                        class="btn">GitHub</a>
+                    <a href="https://www.linkedin.com/posts/kundika-sahare-999199294_python-cybersecurity-automation-activity-7351470425605844993-D24y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEc350UBP_K6X6FMleS2iPM-RVOS_-X9eCw"
+                        target="_blank" class="btn outline">LiveDemo</a>
+                </div>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Plagiarism Detector</h3>
+                <p>A tool that checks documents or text files for plagiarism by comparing similarity and detecting
+                    copied content. Helps ensure originality in writing.</p>
+                <p class="tech">⚙ Tech: Python, NLP</p>
+
+                <div class="links">
+                    <a href="https://github.com/kundika-sahare/Plagiarism_Detector" target="_blank"
+                        class="btn">GitHub</a>
+                    <a href="https://www.linkedin.com/posts/kundika-sahare-999199294_machinelearning-flask-python-activity-7352303066420797440-2u5b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEc350UBP_K6X6FMleS2iPM-RVOS_-X9eCw"
+                        target="_blank" class="btn outline">LiveDemo</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="service" id="service">
+        <h2>service</h2>
+        <div class="services-container">
+
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Frontend Development</h3>
+                <p>I create clean, responsive, and interactive user interfaces using
+                    <strong>HTML, CSS, JavaScript, and React</strong>. My focus is on modern design,
+                    smooth user experience, and cross-device compatibility.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive, user-centered, and visually appealing interfaces that
+                    enhance usability and engagement.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fab fa-python"></i>
+                <h3>Python Development</h3>
+                <p>Building automation tools, scripts, and custom desktop applications to
+                    improve productivity and efficiency.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-robot"></i>
+                <h3>Machine Learning</h3>
+                <p>Developing intelligent models for recommendation systems, plagiarism detection,
+                    and data-driven insights.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-server"></i>
+                <h3>DevOps & Version Control</h3>
+                <p>Containerizing applications with Docker and managing projects effectively
+                    with Git & GitHub.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <p class="contact-text">I’m always open to new projects, collaborations, or freelance opportunities. Feel free to reach out!</p>
+
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i>
+                <a href="mailto:kundikasahare14@gmail.com">kundikasahare14@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone"></i> +91 7775029914</p>
+            <p><i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/kundika-sahare-999199294" target="_blank">LinkedIn</a>
+            </p>
+            <p><i class="fab fa-github"></i>
+                <a href="https://github.com/kundika-sahare" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- At the end of index.html -->
+    <script src="script.js"></script>
+</body>
+
+</html>
