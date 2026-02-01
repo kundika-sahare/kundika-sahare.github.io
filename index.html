@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +15,12 @@
 <body>
     <nav class="navbar">
         <a href="#" class="logo">Portfolio</a>
-        <ul>
+        <!-- HAMBURGER BUTTON -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <ul id="nav-links">
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#about">About me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#service">Service</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -31,7 +35,7 @@
         <div class="bar" style="--i:1;"></div>
     </div>
     <!--Home section-->
-    <section class="home" id="home">
+    <section class="home navabr-offset-fix" id="home">
         <div class="home-info">
             <h1>Kundika Narendra Sahare</h1>
             <h2>Hey I'm a
@@ -44,9 +48,9 @@
             <div class="btn-sci">
                 <a href="Resume.pdf" class="btn" download>Download CV</a>
                 <div class="sci">
-                    <a href="https://github.com/kundika-sahare"  target="-blank">
+                    <a href="https://github.com/kundika-sahare" target="-blank">
                         <i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/kundika-sahare-999199294"  target="-blank">
+                    <a href="https://www.linkedin.com/in/kundika-sahare-999199294" target="-blank">
                         <i class='bx bxl-linkedin'></i></a>
                 </div>
             </div>
@@ -61,7 +65,7 @@
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about navbar-offset-fix" id="about">
         <h2>About Me</h2>
         <div class="about-text">
             <div class="about-text">
@@ -85,44 +89,64 @@
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
-        <h2>my Work</h2>
+    <section class="projects navabr-offset-fix" id="projects">
+        <h2>My Projects</h2>
         <p>Here you can see my best projects.</p>
-        <div class="project-card">
-            <div class="project-content">
-                <h3>Keylogger-Detection-Auto-Blocker</h3>
-                <p>A Python project that detects keylogger activities in real-time, preventing unauthorized keylogging
-                    and
-                    ensuring user security.</p>
-                <p class="tech">⚙ Tech: Python</p>
-                <div class="links">
-                    <a href="https://github.com/kundika-sahare/Keylogger-Detection-Auto-Blocker" target="_blank"
-                        class="btn">GitHub</a>
-                    <a href="https://www.linkedin.com/posts/kundika-sahare-999199294_python-cybersecurity-automation-activity-7351470425605844993-D24y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEc350UBP_K6X6FMleS2iPM-RVOS_-X9eCw"
-                        target="_blank" class="btn outline">LiveDemo</a>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Keylogger-Detection-Auto-Blocker</h3>
+                    <p>A Python project that detects keylogger activities in real-time, preventing unauthorized
+                        keylogging
+                        and
+                        ensuring user security.</p>
+                    <p class="tech">⚙ Tech: Python</p>
+                    <div class="links">
+                        <a href="https://github.com/kundika-sahare/Keylogger-Detection-Auto-Blocker" target="_blank"
+                            class="btn">GitHub</a>
+                        <a href="https://www.linkedin.com/posts/kundika-sahare-999199294_python-cybersecurity-automation-activity-7351470425605844993-D24y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEc350UBP_K6X6FMleS2iPM-RVOS_-X9eCw"
+                            target="_blank" class="btn outline">LiveDemo</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="project-card">
-            <div class="project-content">
-                <h3>Plagiarism Detector</h3>
-                <p>A tool that checks documents or text files for plagiarism by comparing similarity and detecting
-                    copied content. Helps ensure originality in writing.</p>
-                <p class="tech">⚙ Tech: Python, NLP</p>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Plagiarism Detector</h3>
+                    <p>A tool that checks documents or text files for plagiarism by comparing similarity and detecting
+                        copied content. Helps ensure originality in writing.</p>
+                    <p class="tech">⚙ Tech: Python, NLP</p>
 
-                <div class="links">
-                    <a href="https://github.com/kundika-sahare/Plagiarism_Detector" target="_blank"
-                        class="btn">GitHub</a>
-                    <a href="https://www.linkedin.com/posts/kundika-sahare-999199294_machinelearning-flask-python-activity-7352303066420797440-2u5b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEc350UBP_K6X6FMleS2iPM-RVOS_-X9eCw"
-                        target="_blank" class="btn outline">LiveDemo</a>
+                    <div class="links">
+                        <a href="https://github.com/kundika-sahare/Plagiarism_Detector" target="_blank"
+                            class="btn">GitHub</a>
+                        <a href="https://www.linkedin.com/posts/kundika-sahare-999199294_machinelearning-flask-python-activity-7352303066420797440-2u5b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEc350UBP_K6X6FMleS2iPM-RVOS_-X9eCw"
+                            target="_blank" class="btn outline">LiveDemo</a>
+                    </div>
+                </div>
+            </div>
+            <!--project 3-->
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>docker-notes-app</h3>
+                    <p>A simple Notes App built with Flask and containerized using Docker.
+                        This project allows you to add, view, and manage notes. Data is stored in a local JSON file.</p>
+                    <p class="tech">⚙ Tech: Python, Flask, ML</p>
+
+                    <div class="links">
+                        <a href="https://github.com/kundika-sahare/docker-notes-app" target="_blank"
+                            class="btn">GitHub</a>
+                        <a href="https://www.linkedin.com/posts/kundika-sahare-999199294_successfully-built-a-notes-app-with-flask-ugcPost-7373248999530692608-YpYX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEc350UBP_K6X6FMleS2iPM-RVOS_-X9eCw"
+                            target="_blank" class="btn outline">LiveDemo</a>
+                    </div>
                 </div>
             </div>
         </div>
+
 
     </section>
 
-    <section class="service" id="service">
+    <section class="service navabr-offset-fix" id="service">
         <h2>service</h2>
         <div class="services-container">
 
@@ -167,9 +191,10 @@
 
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact navabr-offset-fix" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <p class="contact-text">I’m always open to new projects, collaborations, or freelance opportunities. Feel free to reach out!</p>
+        <p class="contact-text">I’m always open to new projects, collaborations, or freelance opportunities. Feel free
+            to reach out!</p>
 
         <div class="contact-info">
             <p><i class="fas fa-envelope"></i>
